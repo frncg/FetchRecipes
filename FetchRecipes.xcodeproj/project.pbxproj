@@ -45,11 +45,6 @@
 			path = FetchRecipesTests;
 			sourceTree = "<group>";
 		};
-		72B2C3DC2DF322F9002D3F86 /* Media */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Media;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +79,6 @@
 				72B2C39C2DF31EF4002D3F86 /* FetchRecipesTests */,
 				72B2C38A2DF31EF3002D3F86 /* Products */,
 				72B2C3D52DF32034002D3F86 /* README */,
-				72B2C3DC2DF322F9002D3F86 /* Media */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +109,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				72B2C38B2DF31EF3002D3F86 /* FetchRecipes */,
-				72B2C3DC2DF322F9002D3F86 /* Media */,
 			);
 			name = FetchRecipes;
 			packageProductDependencies = (
