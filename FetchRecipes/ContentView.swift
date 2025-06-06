@@ -1,24 +1,31 @@
-//
-//  ContentView.swift
-//  FetchRecipes
-//
-//  Created by Franco Miguel Guevarra on 6/6/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(RecipeManager.self) var recipeManager
+    @Environment(SafariSheetManager.self) var safariSheetManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            RecipeListView()
+                .fullScreenCover(
+                    item: Binding(get: {
+                        safariSheetManager.safariSheetURL
+                    }, set: { value in
+                        if value == nil {
+                            safariSheetManager.dismiss()
+                        }
+                    })
+                ){ item in
+                    SFSafariView(url: item.url)
+                        .ignoresSafeArea()
+                }
+                .task {
+                    await recipeManager.fetchRecipes()
+                }
+                .refreshable {
+                    await recipeManager.fetchRecipes()
+                }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
