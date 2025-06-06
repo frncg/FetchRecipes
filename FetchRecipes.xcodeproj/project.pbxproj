@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		72B2C3D72DF3203A002D3F86 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 72B2C3D52DF32034002D3F86 /* README */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		72B2C39A2DF31EF4002D3F86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		72B2C3892DF31EF3002D3F86 /* FetchRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B2C3992DF31EF4002D3F86 /* FetchRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B2C3A32DF31EF4002D3F86 /* FetchRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B2C3D52DF32034002D3F86 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,6 +43,11 @@
 		72B2C39C2DF31EF4002D3F86 /* FetchRecipesTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FetchRecipesTests;
+			sourceTree = "<group>";
+		};
+		72B2C3DC2DF322F9002D3F86 /* Media */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -73,6 +83,8 @@
 				72B2C38B2DF31EF3002D3F86 /* FetchRecipes */,
 				72B2C39C2DF31EF4002D3F86 /* FetchRecipesTests */,
 				72B2C38A2DF31EF3002D3F86 /* Products */,
+				72B2C3D52DF32034002D3F86 /* README */,
+				72B2C3DC2DF322F9002D3F86 /* Media */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				72B2C38B2DF31EF3002D3F86 /* FetchRecipes */,
+				72B2C3DC2DF322F9002D3F86 /* Media */,
 			);
 			name = FetchRecipes;
 			packageProductDependencies = (
@@ -203,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B2C3D72DF3203A002D3F86 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
